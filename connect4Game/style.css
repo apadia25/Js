@@ -1,0 +1,112 @@
+body {
+    background-image: url('img.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.wrapper{
+    background-color: white;
+    width: 33.75em;
+    position: absolute;
+    padding: 2em;
+    transform:translateX(-50%);
+    left: 50%;
+    top: 1.25em;
+    border-radius: 0.5em;
+    margin-top: 3rem;
+}
+
+.container{
+    margin: 1.25em auto;
+    width: 33.75em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+#information{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.player-wrappers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player1::before{
+    content: "";
+    display: inline-block;
+    width: 3.12em;
+    height: 3.12em;
+    border-radius: 50%;
+    background: radial-gradient(#ec7453 1.12em, #cc5333 1.25em);
+}
+
+.player2::before{
+    content: "";
+    display: inline-block;
+    width: 3.12em;
+    height: 3.12em;
+    border-radius: 50%;
+    background: radial-gradient(#7946c6 1.12em, #23074d 1.25em);
+}
+
+#playerTurn{
+    margin: 1em 0;
+    text-align: right;
+}
+
+#playerTurn span{
+    font-weight: 600;
+}
+
+.startScreen{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url('img.jpg');
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startScreen button{
+    background-color: white;
+    font-size: 1.4em;
+    padding: 1em 2em;
+    border: 0;
+    outline: 0;
+    border-radius: 2em;
+    cursor: pointer;
+}
+/* //// */
+.grid-row{
+    margin: 0 auto;
+    display: flex;
+}
+
+.grid-box{
+    width: 6em;
+    height: 4.5em;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(white 1.57em, #6777f0 1.43em);
+     cursor: pointer;
+}
+.hide{
+    display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="overlay">
+            <div class="title">StopWatch</div>
+            <!-- <div class="title" id="end-date">9 March 2024 10:00pm</div> -->
+
+            <div class="col">
+                <div>
+                    <input type="text" id="hours" readonly value="0">
+                    <br/>
+                    <label for="hours">Hours</label>
+                </div>
+                <div>
+                    <input type="text" id="minutes" readonly value="0">
+                    <br/>
+                    <label for="minutes">Minutes</label>
+                </div>
+                <div>
+                    <input type="text" id="seconds" readonly value="0">
+                    <br/>
+                    <label for="seconds">Seconds</label>
+                </div>
+                <div>
+                    <input type="text" id="hundredthSecond" readonly value="0">
+                    <br/>
+                    <label for="hundredthSecond">Mili Seconds</label>
+                </div>
+            </div>
+            <div class="button">
+                <button name="start" value="start">Start</button>
+                <button name="stop" value="stop">Stop</button>
+                <button name="reset" value="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
